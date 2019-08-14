@@ -1,0 +1,9 @@
+在CEM-RL基础上，划分为 ES Population 和 RL Population. （两个Population size 大小一样）
+
+每轮迭代, 把 ES population 和 RL population 中的个体和在一起按 fitness 值排序，选择前 population size个体加入到 ES 和 RL 中。
+
+只有RL population中的个体参与训练。
+
+
+
+

@@ -1,0 +1,8 @@
+在CEM-RL基础上，划分为 ES Population 和 RL Population. （两个Population size 大小一样）
+
+每轮迭代, ES Population中最好的个体替换掉 RL Population中最差的个体；  RL Population中最好的个体也替换掉 ES Population中最差的个体。
+（前提是最好的个体的fitness值大于最差的个体的fitness值）
+
+只有RL population中的个体参与训练。
+
+ES和RL共用一个Replay Buffer。
